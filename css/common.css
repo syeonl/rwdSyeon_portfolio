@@ -232,7 +232,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 }
 
 .main_about {padding: 80px 0 140px;}
-.main_about .about_inner {width: 1200px; margin: 0 auto; overflow-x: hidden;}
+.main_about .about_inner {width: 1200px; margin: 0 auto; overflow: hidden;}
 .main_about .about_inner .about_me {display: flex; overflow: hidden; margin-bottom: 100px; text-align: center;}
 .main_about .about_inner .about_me {
     animation-duration: 3s;
