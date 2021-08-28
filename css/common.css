@@ -176,7 +176,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 
 #container .main_visual {
     /* 임시배경 */
-    background: url(../images/KakaoTalk_20210802_132950471_01.jpg) no-repeat 100% 100%;
+    background: url(../images/main_visual_me00.jpg) no-repeat 100% 100%;
     background-size: cover;
     position: relative;
 }
@@ -213,7 +213,14 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     100%{border-right: 1px solid #fff} 
 }
 .main_visual .visual_inner p {font-size: 18px; line-height: 2; color: #fff; font-weight: 500; margin-top: 20px; position: relative;}
-.main_visual .visual_inner em {display: block; font-size: 150px; font-weight: 700; color: #fff; position: relative; text-align: right;}
+.main_visual .visual_inner em {
+    font-size: 150px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    right: 160px;
+    bottom: 100px;
+}
 .main_visual .visual_inner em:after {
     content: '';
     width: 400px;
@@ -373,7 +380,7 @@ to {
 
 
 
-.main_contact {padding: 120px 0; background: url(../images/4.jfif) no-repeat 50% 50%; background-size: cover;}
+.main_contact {padding: 120px 0; background: url(../images/contact.jpg) no-repeat 50% 50%; background-size: cover;}
 .main_contact .contact_inner {width: 1200px; margin: 0 auto; text-align: center;}
 .main_contact .contact_inner .txt {font-size: 18px;}
 .main_contact .contact_inner .resume {display: inline-block; border: 1px solid black; padding: 20px; color: #555; font-family: 'Montserrat',sans-serif; margin: 50px 0;}
