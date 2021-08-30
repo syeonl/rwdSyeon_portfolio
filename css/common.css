@@ -175,7 +175,6 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 
 
 #container .main_visual {
-    /* 임시배경 */
     background: url(../images/main_visual_me00.jpg) no-repeat 100% 100%;
     background-size: cover;
     position: relative;
@@ -187,7 +186,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(121, 135, 198, 0.5);
+    background: rgba(121, 135, 198, 0.4);
 }
 .main_visual .visual_inner {
     width: 1200px;
@@ -234,23 +233,16 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 .main_about {padding: 80px 0 140px;}
 .main_about .about_inner {width: 1200px; margin: 0 auto; overflow: hidden;}
 .main_about .about_inner .about_me {display: flex; margin-bottom: 100px; text-align: center;}
-.main_about .about_inner .about_me {
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-/* 창밖 왼쪽에서 오른쪽으로 들어오는 애니메이션 */
-@keyframes slidein {
-from {
-    margin-left: 100%;
-    width: 300%
-}
 
-to {
-    margin-left: 0%;
-    width: 100%;
+.main_about .about_inner .about_me dl {
+    flex: 0 1 calc(100% / 3);
+    position: relative;
+    transition: transform 1s, opacity 1s;
+    opacity: 0;
+    transform:translateX(100px);
 }
-}
-.main_about .about_inner .about_me dl {flex: 0 1 calc(100% / 3); position: relative;}
+.main_about.animated .about_inner .about_me dl {opacity: 1; transform:translateX(0px);}
+
 .main_about .about_inner .about_me dl+dl:after {
     content: '';
     width: 1px;
@@ -259,6 +251,7 @@ to {
     left: 0;
     top: 0;
     background: #333;
+    transition: all 0.5s;
 }
 .main_about .about_inner .about_me dt {font-size: 24px; font-weight: 700; font-family: 'Montserrat',sans-serif; margin-bottom: 10px;}
 .main_about .about_inner .about_me dd {font-size: 18px; color: #000;}
@@ -443,63 +436,56 @@ to {
 .tit {font-size: 18px; font-family: 'Montserrat',sans-serif; font-weight: 700; margin-bottom: 10px; letter-spacing: 5px;}
 
 
+.contents .overview {width: 1200px; margin: 0 auto; padding: 60px 0;}
+.contents .overview p {font-size: 18px;}
+
+.media_query .media_inner {width: 1200px; margin: 0 auto; text-align: center; position: relative;}
+.media_query .media_inner .contents_tit, .media_txt {text-align: left;}
+.media_query .media_inner .media_txt {color: #222; font-weight: 500;}
+.media_query .media_inner img {height: 580px;}
+
+.contents .style_guide {padding: 60px 0; width: 1200px; margin: 0 auto;}
+.contents .style_guide .typography {float: left; margin: 0 180px;}
+
+.contents .page_design {padding: 30px 20px; background: #f0e9ec; width: 1200px; margin: 0 auto;}
+.page_design .goal {margin-bottom: 40px;}
+.page_design [class*="page"] {margin-left: 10px;}
+
+.description img {width: 100%; margin: 0 auto;}
+
+
+
 /***********************  교원에듀 데스크탑 설명 서브 페이지 ***********************/
 .sub_pckyowon {background: linear-gradient(90deg, #f0b745, #fe833a);}
 .sub_pckyowon .sub_visual {width: 1200px; margin: 0 auto; height: 900px; background: url(../images/kyowon_visual.png) no-repeat 80% 50%;}
 .pc_kyowon_container {background: #fffafc;}
 .pc_kyowon_container .contents .contents_inner {width: 100%;}
+.pc_kyowon_container .contents .media_query {padding: 60px 0; background: #fdc252;}
 
-.pc_kyowon_container .contents .overview {width: 1200px; margin: 0 auto; padding: 60px 0;}
-.pc_kyowon_container .contents .overview p {font-size: 18px;}
 .pc_kyowon_container .overview .btn_report {text-align: center; margin-top: 30px;}
 .pc_kyowon_container .overview .btn_report a {display: inline-block; border: 1px solid #000; color: #555; padding: 10px;}
 
 
-.pc_kyowon_container .contents .media_query {padding: 60px 0; background: #fdc252;}
-.pc_kyowon_container .media_query .media_inner {width: 1200px; margin: 0 auto; text-align: center; position: relative;}
-.pc_kyowon_container .media_query .media_inner .contents_tit, .media_txt {text-align: left;}
-.pc_kyowon_container .media_query .media_inner .media_txt {color: #222; font-weight: 500;}
-.pc_kyowon_container .media_query .media_inner img {height: 580px;}
-
-.pc_kyowon_container .contents .style_guide {padding: 60px 0; width: 1200px; margin: 0 auto;}
-.pc_kyowon_container .contents .style_guide .typography {float: left; margin: 0 180px;}
-
-.pc_kyowon_container .contents .page_design {padding: 30px 20px; background: #f0e9ec; width: 1200px; margin: 0 auto;}
-.pc_kyowon_container .page_design .goal {margin-bottom: 40px;}
-.pc_kyowon_container .page_design [class*="page"] {margin-left: 10px;}
-
-.pc_kyowon_container .description img {width: 100%; margin: 0 auto;}
-
-
-
 /***********************  교원에듀 모바일 설명 서브 페이지 ***********************/
-/* .m_kyowon_container */
 .sub_mkyowon {background: linear-gradient(-45deg, #d3faf9, #4fbbe2);}
 .sub_mkyowon .sub_visual {width: 1200px; margin: 0 auto; height: 900px; background: url(../images/mkyowon_visual.png) no-repeat 80% 50%;}
 
-.m_kyowon_container .contents .overview {width: 1200px; margin: 0 auto; padding: 60px 0;}
-.m_kyowon_container .contents .overview p {font-size: 18px;}
-
 .m_kyowon_container .contents .media_query {padding: 60px 0; background: #bfeeff;}
-.m_kyowon_container .media_query .media_inner {width: 1200px; margin: 0 auto; text-align: center; position: relative;}
-.m_kyowon_container .media_query .media_inner .contents_tit, .media_txt {text-align: left;}
-.m_kyowon_container .media_query .media_inner .media_txt {color: #222; font-weight: 500;}
-.m_kyowon_container .media_query .media_inner img {height: 580px;}
-
-.m_kyowon_container .contents .style_guide {padding: 60px 0; width: 1200px; margin: 0 auto;}
-.m_kyowon_container .contents .style_guide .typography {float: left; margin: 0 180px;}
-
-.m_kyowon_container .contents .page_design {padding: 30px 20px; background: #f0e9ec; width: 1200px; margin: 0 auto;}
-.m_kyowon_container .page_design .goal {margin-bottom: 40px;}
-.m_kyowon_container .page_design [class*="page"] {margin-left: 10px;}
-
-.m_kyowon_container .description img {width: 100%; margin: 0 auto;}
 
 .m_kyowon_container .mobile_design {width: 1200px; margin: 0 auto; padding: 60px 0 100px;}
 .m_kyowon_container .mobile_design img {width: 100%;}
 
 
+/***********************  삼성전기 반응형 설명 서브 페이지 ***********************/
+.sub_rwdSamsung {background:#2666df;}
+.sub_rwdSamsung .sub_visual {width: 1200px; margin: 0 auto; height: 900px; background: url(../images/rwdsamsung_visual.png) no-repeat 100% 50%;}
+.rwd_samsung_container .contents .media_query {padding: 60px 0; background: #3470e1;}
 
+.rwd_samsung_container .mobile_design {width: 1200px; margin: 0 auto; padding: 60px 0 100px;}
+.rwd_samsung_container .mobile_design img {width: 100%;}
+
+.rwd_samsung_container .description {padding-top: 80px; text-align: center;}
+.rwd_samsung_container .description img {width: 1200px;}
 
 
 
@@ -576,7 +562,7 @@ to {
 
 
 
-    /* 모바일 메뉴 */
+    /* 모바일 gnb 메뉴 */
     #header .m_gnb_wrap {
         display: block;
         position: fixed;
