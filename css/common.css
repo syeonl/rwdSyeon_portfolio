@@ -175,7 +175,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 
 
 #container .main_visual {
-    background: url(https://cdn.jsdelivr.net/gh/syeonl/rwdSyeon_portfolio/images/main_visual_me00.jpg) no-repeat 100% 100%;
+    background: url(../images/main_visual_me00.jpg) no-repeat 100% 100%;
     background-size: cover;
     position: relative;
 }
@@ -302,7 +302,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     top: 116PX;
     width: 280px;
     height: 457px;
-    background: url(https://cdn.jsdelivr.net/gh/syeonl/rwdSyeon_portfolio/images/tb_rwdsam.png) no-repeat 50% 50%;
+    background: url(../images/tb_rwdsam.png) no-repeat 50% 50%;
     z-index: 9999;
     background-size: 280px;
 }
@@ -320,11 +320,11 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     margin-top: -340px;
     width: 644px;
     height: 364px;
-    background: url(https://cdn.jsdelivr.net/gh/syeonl/rwdSyeon_portfolio/images/pc_kyowon_move.png) 45% top no-repeat;
+    background: url(../images/pc_kyowon_move.png) 45% top no-repeat;
     background-size: 100%;
 }
 .main_portfolio .portfolio>li:nth-child(2):after {
-    background-image: url(https://cdn.jsdelivr.net/gh/syeonl/rwdSyeon_portfolio/images/mob_kyowon_move.jpg);
+    background-image: url(../images/mob_kyowon_move.jpg);
     margin-top: -300px;
     margin-left: -1px;
     width: 228px;
@@ -333,7 +333,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 }
 .main_portfolio .portfolio>li:nth-child(3):after {
     left: 51%;
-    background-image: url(https://cdn.jsdelivr.net/gh/syeonl/rwdSyeon_portfolio/images/rwdsam.jpg); 
+    background-image: url(../images/rwdsam.jpg); 
     margin-top: -346px;
     border-radius: 14px 14px 0 0;
 }
@@ -373,7 +373,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 
 
 
-.main_contact {padding: 120px 0; background: url(https://cdn.jsdelivr.net/gh/syeonl/rwdSyeon_portfolio/images/contact.jpg) no-repeat 50% 50%; background-size: cover;}
+.main_contact {padding: 120px 0; background: url(../images/contact.jpg) no-repeat 50% 50%; background-size: cover;}
 .main_contact .contact_inner {width: 1200px; margin: 0 auto; text-align: center;}
 .main_contact .contact_inner .txt {font-size: 18px;}
 .main_contact .contact_inner .resume {display: inline-block; border: 1px solid black; padding: 20px; color: #555; font-family: 'Montserrat',sans-serif; margin: 50px 0;}
@@ -386,7 +386,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     height: 40px;
     margin-right: 10px;
     vertical-align: middle;
-    background: url(https://cdn.jsdelivr.net/gh/syeonl/rwdSyeon_portfolio/images/email.png) no-repeat 50% 50%;
+    background: url(../images/email.png) no-repeat 50% 50%;
 }
 .main_contact .contact_inner .contact_wrap .qr {display: inline-block; margin: 40px 0;}
 .main_contact .contact_inner .contact_wrap .qr span {display: block;}
@@ -457,7 +457,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 
 /***********************  교원에듀 데스크탑 설명 서브 페이지 ***********************/
 .sub_pckyowon {background: linear-gradient(90deg, #f0b745, #fe833a);}
-.sub_pckyowon .sub_visual {width: 1200px; margin: 0 auto; height: 900px; background: url(https://cdn.jsdelivr.net/gh/syeonl/rwdSyeon_portfolio/images/kyowon_visual.png) no-repeat 80% 50%;}
+.sub_pckyowon .sub_visual {width: 1200px; margin: 0 auto; height: 900px; background: url(../images/kyowon_visual.png) no-repeat 80% 50%;}
 .pc_kyowon_container {background: #fffafc;}
 .pc_kyowon_container .contents .contents_inner {width: 100%;}
 .pc_kyowon_container .contents .media_query {padding: 60px 0; background: #fdc252;}
@@ -468,7 +468,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 
 /***********************  교원에듀 모바일 설명 서브 페이지 ***********************/
 .sub_mkyowon {background: linear-gradient(-45deg, #d3faf9, #4fbbe2);}
-.sub_mkyowon .sub_visual {width: 1200px; margin: 0 auto; height: 900px; background: url(https://cdn.jsdelivr.net/gh/syeonl/rwdSyeon_portfolio/images/mkyowon_visual.png) no-repeat 80% 50%;}
+.sub_mkyowon .sub_visual {width: 1200px; margin: 0 auto; height: 900px; background: url(../images/mkyowon_visual.png) no-repeat 80% 50%;}
 
 .m_kyowon_container .contents .media_query {padding: 60px 0; background: #bfeeff;}
 
@@ -478,7 +478,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 
 /***********************  삼성전기 반응형 설명 서브 페이지 ***********************/
 .sub_rwdSamsung {background:#2666df;}
-.sub_rwdSamsung .sub_visual {width: 1200px; margin: 0 auto; height: 900px; background: url(https://cdn.jsdelivr.net/gh/syeonl/rwdSyeon_portfolio/images/rwdsamsung_visual.png) no-repeat 100% 50%;}
+.sub_rwdSamsung .sub_visual {width: 1200px; margin: 0 auto; height: 900px; background: url(../images/rwdsamsung_visual.png) no-repeat 100% 50%;}
 .rwd_samsung_container .contents .media_query {padding: 60px 0; background: #3470e1;}
 
 .rwd_samsung_container .mobile_design {width: 1200px; margin: 0 auto; padding: 60px 0 100px;}
