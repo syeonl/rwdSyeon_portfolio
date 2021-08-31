@@ -593,7 +593,44 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     #header .m_gnb_wrap .m_depth1>li>a {display: block; padding: 0 20px; font-size: 20px; line-height: 70px;}
     #header .m_gnb_wrap .m_depth1>li:hover>a,
     #header .m_gnb_wrap .m_depth1>li.active>a {color:#fff;}
+
+
     
+    /*********************** 서브 공통 ***********************/
+    /* 서브 타이틀 공통 */
+    #sub_intro .sub_tit {font-size: 38px; padding-top: 80px;}
+
+    /* 서브 버튼 공통 */
+    .btn_view {width: 160px; height: 50px; margin-top: 60px;}
+    .btn_view a {padding: 10px 20px;}
+
+    .contents_tit {padding-bottom: 20px;}
+    .contents .overview {width: auto; margin: 0 30px; padding: 50px 0;}
+
+    .media_query .media_inner {width: auto; margin: 0 30px;}
+    .media_query .media_inner img {height: 500px;}
+
+    .contents .style_guide {padding: 50px 0; width: auto; margin: 0 30px;}
+    .contents .style_guide .typography {margin: 0 20px;}
+
+    .contents .page_design {width: auto; margin: 0 30px;}
+
+    /***********************  교원에듀 데스크탑 설명 서브 페이지 ***********************/
+    .sub_pckyowon .sub_visual {width: auto; margin: 0 40px; height: 860px; background: url(../images/kyowon_visual.png) no-repeat 100% 50%; background-size: 72%;}
+
+    /***********************  교원에듀 모바일 설명 서브 페이지 ***********************/
+    .sub_mkyowon .sub_visual {width: auto; margin: 0 40px; height: 860px; background: url(../images/mkyowon_visual.png) no-repeat 100% 50%; background-size: 62%;}
+    .m_kyowon_container .mobile_design {width: auto; margin: 0; padding: 60px 0 0;}
+    
+    /***********************  삼성전기 반응형 설명 서브 페이지 ***********************/
+    .sub_rwdSamsung .sub_visual {width: auto; margin: 0 40px; height: 860px; background: url(../images/rwdsamsung_visual.png) no-repeat 100% 60%; background-size: 72%;}
+
+    .rwd_samsung_container .mobile_design {width: auto; margin: 0; padding: 60px 0 0;}
+    .rwd_samsung_container .mobile_design img {width: 100%;}
+    .rwd_samsung_container .media_query .media_inner img {height: 420px;}
+    .rwd_samsung_container .description {padding-top: 60px;}
+    .rwd_samsung_container .description img {width: 100%;}
+
 }
 
 
@@ -654,5 +691,40 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     
     /* 모바일 메뉴 */
     #header .m_gnb_wrap .m_depth1>li>a {font-size: 16px;}
+
+
+    /*********************** 서브 공통 ***********************/
+    /* 서브 타이틀 공통 */
+    .tit {position: absolute; left: -80px; top: 30px; writing-mode: vertical-rl; text-orientation: mixed;}
+    #sub_intro .sub_tit {font-size: 36px;}
+
+    /* 서브 버튼 공통 */
+    .btn_view {width: 140px; height: 40px; margin-top: 60px;}
+    .btn_view a {padding: 10px;}
+
+    .contents_tit {padding-bottom: 20px;}
+    .contents .overview {width: auto; margin: 0 20px; padding: 50px 0;}
+
+    .media_query .media_inner {width: auto; margin: 0 20px;}
+    .media_query .media_inner img {height: 386px;}
+
+    .contents .style_guide {padding: 60px 0; width: auto; margin: 0 20px; display: flex; flex-direction: column;}
+    .contents .style_guide .typography {margin: 40px auto; margin-bottom: 20px; position: relative;}
+    .contents .style_guide .color {margin: 0 auto; position: relative;}
+
+    .contents .page_design {width: auto; margin: 0 20px;}
+
+    /***********************  교원에듀 데스크탑 설명 서브 페이지 ***********************/
+    .sub_pckyowon .sub_visual {margin: 0 30px; height: 820px; background: url(../images/kyowon_visual.png) no-repeat 100% 80%; background-size: 72%;}
+
+    /***********************  교원에듀 모바일 설명 서브 페이지 ***********************/
+    .sub_mkyowon .sub_visual {margin: 0 30px; height: 820px; background: url(../images/mkyowon_visual.png) no-repeat 100% 80%; background-size: 62%;}
+    .m_kyowon_container .mobile_design {padding: 40px 0 0;}
+
+    /***********************  삼성전기 반응형 설명 서브 페이지 ***********************/
+    .sub_rwdSamsung .sub_visual {width: auto; margin: 0 30px; height: 820px; background: url(../images/rwdsamsung_visual.png) no-repeat 100% 80%; background-size: 74%;}
+
+    .rwd_samsung_container .mobile_design {padding: 40px 0 0;}
+    .rwd_samsung_container .media_query .media_inner img {height: 340px;}
 }
 
