@@ -130,6 +130,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 
 
 
+
 #wrap {min-width: 320px; position: relative;}
 
 
@@ -169,6 +170,8 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
         transition: all 0.3s 0.1s;
     }
     #header .pc_lnb_wrap .lnb li>a:hover:after {transform: scale(1.5);}
+
+    .main_skill .skill_inner .skill>li .txt p br {display: none;}
 }
 
 
@@ -346,13 +349,12 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     border: 1px solid #c7dbff;
     border-radius: 30px;
     display: inline-block;
-    padding: 0 20px;
+    padding: 12px 20px 12px 20px;
     color: #555;
     font-family: 'Montserrat',sans-serif;
     position: relative;
     overflow: hidden;
     transition: color 0.2s;
-    line-height: 50px;
 }
 .main_portfolio .portfolio .btn_wrap li a:before{
     content: "";
@@ -366,10 +368,9 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     transform: translateX(-100%);
     transition: transform 0.2s;
 }
-.main_portfolio .portfolio .btn_wrap li:hover {color: #fff; font-weight: 700;}
 .main_portfolio .portfolio .btn_wrap li a:hover:before {transform: translateX(0);}
-
-
+.main_portfolio .portfolio .btn_wrap li a:hover {color: #fff; font-weight: 700;}
+.main_portfolio .portfolio .btn_wrap li a span {position: relative;}
 
 
 
@@ -538,11 +539,16 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
         background: #222;
     }
 
+    .main_tit {font-size: 38px; margin-bottom: 60px;}
+
     .main_visual .visual_inner {
         width: auto;
         margin: 0;
         text-align: center;
     }
+    .main_visual .visual_inner em {font-size: 100px;}
+    .main_visual .visual_inner em:after {width: 270px;}
+
     .main_about {padding: 80px 0;}
     .main_about .about_inner {width: auto; margin: 0 30px;}
     .main_about .about_inner .img_wrap {margin-right: 30px;}
@@ -553,14 +559,20 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .main_about .about_inner .about_me dl+dl:after {width: 100%; height: 1px; left: 0; top: -30px;}
 
     .main_skill .skill_inner {width: auto; margin: 0 20px;}
-    .main_skill .skill_inner .skill {flex-wrap: wrap; width: 50%;}
+    .main_skill .skill_inner .skill {flex-wrap: wrap;}
+    .main_skill .skill_inner .skill>li {flex: 1 1 40%;}
+    .main_skill .skill_inner .skill>li:nth-child(2) {margin: 0;}
+    .main_skill .skill_inner .skill>li+li {margin-left: 0; margin-top: 40px;}
+    .main_skill .skill_inner .skill>li .txt p br {display: block;}
 
+    .main_portfolio .portfolio_inner {width: auto; margin: 0 20px;}
+    .main_portfolio .portfolio>li:after {margin-top: -268px; width: 468px; height: 266px;}
+    .main_portfolio .portfolio>li:nth-child(2):after {margin-top: -244px; margin-left: -1px; width: 165px; height: 340px;}
+    .main_portfolio .portfolio>li:nth-child(3):after {left: 444px; margin-top: -271px; width: 466px; height: 261px; border-radius: 9px 9px 0 0;}
+    .main_portfolio .portfolio>li:nth-child(3):before {left: 86px; top: 72px; width: 210px; height: 366px; background-size: 210px;}
 
-
-
-
-
-
+    .main_contact .contact_inner {width: auto; margin: 0 20px;}
+    .main_contact .contact_inner .resume {background: #000; color: #fff; padding: 16px; margin: 44px 0;}
 
     /* 모바일 gnb 메뉴 */
     #header .m_gnb_wrap {
@@ -589,10 +601,16 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 @media (max-width:767px) {
     #header .pc_lnb_wrap {display: none;}
 
+    .main_tit {font-size: 36px;}
+    .main_visual .visual_inner {padding: 488px 0 60px;}
+    .main_visual .visual_inner em {font-size: 80px; right: 0; bottom: 0; position: relative;}
+    .main_visual .visual_inner em:after {width: 220px;}
+
     .main_about {padding: 60px 20px;}
     .main_about .about_inner {margin: 0;}
     .main_about .about_inner .about_wrap {flex-direction: column;}
     .main_about .about_inner .about_wrap .img_wrap {margin: 0 auto;}
+    .main_about .about_wrap .img_wrap img {height: 460px;}
 
     .main_about .about_wrap .about_txt {    
         display: flex;
@@ -621,6 +639,20 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
         box-shadow: 2px 2px 5px #ccc;
         z-index: -1;
     }
+
+    .main_skill .skill_inner .skill {flex-direction: column; flex-wrap: nowrap;}
+    .main_skill .skill_inner .skill>li img {float: left;}
+    .main_skill .skill_inner .skill>li:nth-child(2) {margin-top: 40px;}
+    .main_skill .skill_inner .skill>li .txt span {font-size: 18px;}
+
+    .main_portfolio .portfolio>li h3 {font-size: 28px;}
+    .main_portfolio .portfolio>li:after {margin-top: -206px; width: 316px; height: 180px;}
+    .main_portfolio .portfolio .btn_wrap li a {padding: 10px; border: 2px solid #c7dbff;}
+    .main_portfolio .portfolio>li:nth-child(2):after {margin-top: -184px; margin-left: -1px; width: 110px; height: 226px;}
+    .main_portfolio .portfolio>li:nth-child(3):after {left: 298px; margin-top: -203px; width: 312px; height: 176px; border-radius: 6px 6px 0 0;}
+    .main_portfolio .portfolio>li:nth-child(3):before {left: 56px; top: 75px; width: 138px; height: 186px; background-size: 136px;}
     
+    /* 모바일 메뉴 */
+    #header .m_gnb_wrap .m_depth1>li>a {font-size: 16px;}
 }
 
