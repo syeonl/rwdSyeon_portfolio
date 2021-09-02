@@ -176,9 +176,11 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .main_portfolio .portfolio>li:nth-child(3):before {display: block;}
 
     .m_btn_top {display: none;}
+    .m_btn_top .m_top {display: none;}
+    
     /* 서브페이지 탑버튼 */
     .pc_btn_top {position: fixed; right: 30px; bottom: 30px; width: 62px;}
-    .pc_btn_top .top {
+    .pc_btn_top .pc_top {
         height: 62px;
         background: #ffe678 url(../images/top_arrow.png) no-repeat 50% 50%;
         text-indent: -9999px;
@@ -186,7 +188,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
         transition: transform 0.5s;
         display: block;
     }
-    .pc_btn_top:hover .top {
+    .pc_btn_top:hover .pc_top {
         transform: translatey(-10px);
     }
 }
@@ -594,10 +596,11 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .main_contact .contact_inner .resume {border: 2px solid #000; padding: 16px; margin: 44px 0;}
 
     .pc_btn_top {display: none;}
+    .pc_btn_top .pc_top {display: none;}
 
     /* 모바일 탑버튼 */
     .m_btn_top {position: fixed; right: 10px; bottom: 20px; width: 62px;}
-    .m_btn_top .top {
+    .m_btn_top .m_top {
         width: 43px;
         height: 43px;
         background: #ffe678 url(../images/top_arrow.png) no-repeat 50% 50%;
@@ -606,7 +609,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
         transition: transform 0.5s;
         display: block;
     }
-    .m_btn_top:hover .top {
+    .m_btn_top:hover .m_top {
         transform: translatey(-10px);
     }
 

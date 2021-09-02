@@ -129,9 +129,9 @@
         sc = $(this).scrollTop();
 
         if(sc >= 600) {
-            $('.pc_btn_top').fadeIn();
+            $('.pc_btn_top .pc_top').fadeIn();
         } else {
-            $('.pc_btn_top').fadeOut();
+            $('.pc_btn_top .pc_top').fadeOut();
         }
     }).trigger('scroll');
 
@@ -154,11 +154,11 @@
         sc = $(this).scrollTop();
 
         if(sc >= 600) {
-            $('.m_btn_top').fadeIn();
+            $('.m_btn_top .m_top').fadeIn();
         } else {
-            $('.m_btn_top').fadeOut();
+            $('.m_btn_top .m_top').fadeOut();
         }
-    });
+    }).trigger('scroll');
 
 
 })();
