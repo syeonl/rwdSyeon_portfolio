@@ -566,7 +566,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .main_skill .skill_inner .skill>li .txt p br {display: block;}
 
     .main_portfolio .portfolio_inner {width: auto; margin: 0 20px;}
-    .main_portfolio .portfolio>li:after {margin-top: -268px; width: 468px; height: 266px; display: none;}
+    .main_portfolio .portfolio>li:after {display: none;}
     .main_portfolio .portfolio>li:nth-child(3):before {display: none;}
     .main_portfolio .portfolio>li img {width: 100%;}
 
