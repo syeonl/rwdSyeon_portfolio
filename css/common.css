@@ -226,6 +226,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     white-space: pre-line;
     position: relative;
 } 
+.main_visual .visual_inner .typing2 span {display: inline-block; text-indent: -9999px;}
 @keyframes cursor{ 
     0%{border-right: 1px solid #fff} 
     50%{border-right: 1px solid #000} 
