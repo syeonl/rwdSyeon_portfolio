@@ -172,6 +172,8 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     #header .pc_lnb_wrap .lnb li>a:hover:after {transform: scale(1.5);}
 
     .main_skill .skill_inner .skill>li .txt p br {display: none;}
+    .main_portfolio .portfolio>li:after {display: block;}
+    .main_portfolio .portfolio>li:nth-child(3):before {display: block;}
 }
 
 
