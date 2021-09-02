@@ -566,13 +566,12 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .main_skill .skill_inner .skill>li .txt p br {display: block;}
 
     .main_portfolio .portfolio_inner {width: auto; margin: 0 20px;}
-    .main_portfolio .portfolio>li:after {margin-top: -268px; width: 468px; height: 266px;}
-    .main_portfolio .portfolio>li:nth-child(2):after {margin-top: -244px; margin-left: -1px; width: 165px; height: 340px;}
-    .main_portfolio .portfolio>li:nth-child(3):after {left: 444px; margin-top: -271px; width: 466px; height: 261px; border-radius: 9px 9px 0 0;}
-    .main_portfolio .portfolio>li:nth-child(3):before {left: 86px; top: 72px; width: 210px; height: 366px; background-size: 210px;}
+    .main_portfolio .portfolio>li:after {margin-top: -268px; width: 468px; height: 266px; display: none;}
+    .main_portfolio .portfolio>li:nth-child(3):before {display: none;}
+    .main_portfolio .portfolio>li img {width: 100%;}
 
     .main_contact .contact_inner {width: auto; margin: 0 20px;}
-    .main_contact .contact_inner .resume {background: #000; color: #fff; padding: 16px; margin: 44px 0;}
+    .main_contact .contact_inner .resume {border: 2px solid #000; padding: 16px; margin: 44px 0;}
 
     /* 모바일 gnb 메뉴 */
     #header .m_gnb_wrap {
@@ -608,7 +607,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .contents .overview {width: auto; margin: 0 30px; padding: 50px 0;}
 
     .media_query .media_inner {width: auto; margin: 0 30px;}
-    .media_query .media_inner img {height: 500px;}
+    .media_query .media_inner img {width: 100%; height: 100%;}
 
     .contents .style_guide {padding: 50px 0; width: auto; margin: 0 30px;}
     .contents .style_guide .typography {margin: 0 20px;}
@@ -627,7 +626,6 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 
     .rwd_samsung_container .mobile_design {width: auto; margin: 0; padding: 60px 0 0;}
     .rwd_samsung_container .mobile_design img {width: 100%;}
-    .rwd_samsung_container .media_query .media_inner img {height: 420px;}
     .rwd_samsung_container .description {padding-top: 60px;}
     .rwd_samsung_container .description img {width: 100%;}
 
@@ -637,9 +635,13 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 /* 모바일분기점 */
 @media (max-width:767px) {
     #header .pc_lnb_wrap {display: none;}
+    #header .logo img {height: 60px;}
+    #header .btn_menu {right: 15px;}
 
     .main_tit {font-size: 36px;}
     .main_visual .visual_inner {padding: 488px 0 60px;}
+    .main_visual .visual_inner .typing2 {font-size: 20px;}
+    .main_visual .visual_inner p {font-size: 16px;}
     .main_visual .visual_inner em {font-size: 80px; right: 0; bottom: 0; position: relative;}
     .main_visual .visual_inner em:after {width: 220px;}
 
@@ -681,16 +683,21 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .main_skill .skill_inner .skill>li img {float: left;}
     .main_skill .skill_inner .skill>li:nth-child(2) {margin-top: 40px;}
     .main_skill .skill_inner .skill>li .txt span {font-size: 18px;}
+    .main_skill .skill_inner .skill>li .txt p {font-size: 16px;}
+    .main_skill .skill_inner .skill>li .txt p br {display: none;}
 
-    .main_portfolio .portfolio>li h3 {font-size: 28px;}
+    .main_portfolio .portfolio>li h3 {font-size: 20px; font-weight: 500;}
     .main_portfolio .portfolio>li:after {margin-top: -206px; width: 316px; height: 180px;}
+    .main_portfolio .portfolio .btn_wrap li {float: none;}
+    .main_portfolio .portfolio .btn_wrap li+li {margin: 0;}
     .main_portfolio .portfolio .btn_wrap li a {padding: 10px; border: 2px solid #c7dbff;}
-    .main_portfolio .portfolio>li:nth-child(2):after {margin-top: -184px; margin-left: -1px; width: 110px; height: 226px;}
-    .main_portfolio .portfolio>li:nth-child(3):after {left: 298px; margin-top: -203px; width: 312px; height: 176px; border-radius: 6px 6px 0 0;}
-    .main_portfolio .portfolio>li:nth-child(3):before {left: 56px; top: 75px; width: 138px; height: 186px; background-size: 136px;}
+    .main_portfolio .portfolio>li:after {display: none;}
+    .main_portfolio .portfolio>li:nth-child(3):before {display: none;}
     
     /* 모바일 메뉴 */
-    #header .m_gnb_wrap .m_depth1>li>a {font-size: 16px;}
+    #header .m_gnb_wrap {width: 34%; height: 34%;}
+    #header .m_gnb_wrap .m_depth1>li {padding-right: 62px; float: none;}
+    #header .m_gnb_wrap .m_depth1>li>a {font-size: 16px; padding: 0;}
 
 
     /*********************** 서브 공통 ***********************/
@@ -706,7 +713,6 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .contents .overview {width: auto; margin: 0 20px; padding: 50px 0;}
 
     .media_query .media_inner {width: auto; margin: 0 20px;}
-    .media_query .media_inner img {height: 386px;}
 
     .contents .style_guide {padding: 60px 0; width: auto; margin: 0 20px; display: flex; flex-direction: column;}
     .contents .style_guide .typography {margin: 40px auto; margin-bottom: 20px; position: relative;}
@@ -725,6 +731,5 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .sub_rwdSamsung .sub_visual {width: auto; margin: 0 30px; height: 820px; background: url(../images/rwdsamsung_visual.png) no-repeat 100% 80%; background-size: 74%;}
 
     .rwd_samsung_container .mobile_design {padding: 40px 0 0;}
-    .rwd_samsung_container .media_query .media_inner img {height: 340px;}
 }
 

@@ -109,7 +109,6 @@
     
                 // flag변수판단하여 true일경우 한번만 실행하고 false걸어줌
                 if(aboutFlag) {
-                    animatedList();
                     aboutFlag = false;
                 }
             }
@@ -122,7 +121,6 @@
         // 스크롤바를 포함한 크기
         var winW = $(this).outerWidth();
         var winH = $(this).height();
-        console.log(winW, winH);
     }).trigger('resize');
 
 
