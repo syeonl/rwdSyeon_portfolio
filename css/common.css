@@ -166,7 +166,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
         display: inline-block;
         margin-left: 10px;
         border-radius: 14px;
-        background: rgb(255, 230, 120);
+        background: #ffe678;
         transition: all 0.3s 0.1s;
     }
     #header .pc_lnb_wrap .lnb li>a:hover:after {transform: scale(1.5);}
@@ -174,6 +174,21 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .main_skill .skill_inner .skill>li .txt p br {display: none;}
     .main_portfolio .portfolio>li:after {display: block;}
     .main_portfolio .portfolio>li:nth-child(3):before {display: block;}
+
+    .m_btn_top {display: none;}
+    /* 서브페이지 탑버튼 */
+    .pc_btn_top {position: fixed; right: 30px; bottom: 30px; width: 62px;}
+    .pc_btn_top .top {
+        height: 62px;
+        background: #ffe678 url(../images/top_arrow.png) no-repeat 50% 50%;
+        text-indent: -9999px;
+        border-radius: 50%;
+        transition: transform 0.5s;
+        display: block;
+    }
+    .pc_btn_top:hover .top {
+        transform: translatey(-10px);
+    }
 }
 
 
@@ -458,6 +473,8 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 
 
 
+
+
 /***********************  교원에듀 데스크탑 설명 서브 페이지 ***********************/
 .sub_pckyowon {background: linear-gradient(90deg, #f0b745, #fe833a);}
 .sub_pckyowon .sub_visual {width: 1200px; margin: 0 auto; height: 900px; background: url(../images/kyowon_visual.png) no-repeat 80% 50%;}
@@ -574,6 +591,23 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 
     .main_contact .contact_inner {width: auto; margin: 0 20px;}
     .main_contact .contact_inner .resume {border: 2px solid #000; padding: 16px; margin: 44px 0;}
+
+    .pc_btn_top {display: none;}
+
+    /* 모바일 탑버튼 */
+    .m_btn_top {position: fixed; right: 10px; bottom: 20px; width: 62px;}
+    .m_btn_top .top {
+        width: 43px;
+        height: 43px;
+        background: #ffe678 url(../images/top_arrow.png) no-repeat 50% 50%;
+        text-indent: -9999px;
+        border-radius: 50%;
+        transition: transform 0.5s;
+        display: block;
+    }
+    .m_btn_top:hover .top {
+        transform: translatey(-10px);
+    }
 
     /* 모바일 gnb 메뉴 */
     #header .m_gnb_wrap {
