@@ -121,6 +121,20 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     opacity: 1;
 }
 
+/* 탑버튼 */
+.move_btn_top {position: fixed; right: 30px; bottom: 30px; width: 62px;}
+.move_btn_top .top {
+    height: 62px;
+    background: #ffe678 url(../images/top_arrow.png) no-repeat 50% 50%;
+    text-indent: -9999px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    display: block;
+}
+.move_btn_top:hover .top {
+    transform: translatey(-10px);
+}
+
 
 /* 모바일 메뉴 hidden */
 #header .m_gnb_wrap {display: none;}
@@ -176,21 +190,6 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .main_portfolio .portfolio>li:nth-child(3):before {display: block;}
 
     .m_btn_top {display: none;}
-    .m_btn_top .m_top {display: none;}
-    
-    /* 서브페이지 탑버튼 */
-    .pc_btn_top {position: fixed; right: 30px; bottom: 30px; width: 62px;}
-    .pc_btn_top .pc_top {
-        height: 62px;
-        background: #ffe678 url(../images/top_arrow.png) no-repeat 50% 50%;
-        text-indent: -9999px;
-        border-radius: 50%;
-        transition: transform 0.5s;
-        display: block;
-    }
-    .pc_btn_top:hover .pc_top {
-        transform: translatey(-10px);
-    }
 }
 
 
@@ -591,27 +590,19 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .main_portfolio .portfolio>li:after {display: none;}
     .main_portfolio .portfolio>li:nth-child(3):before {display: none;}
     .main_portfolio .portfolio>li img {width: 100%;}
+    .main_portfolio .portfolio .btn_wrap li:nth-child(3) {display: none;}
 
     .main_contact .contact_inner {width: auto; margin: 0 20px;}
     .main_contact .contact_inner .resume {border: 2px solid #000; padding: 16px; margin: 44px 0;}
 
-    .pc_btn_top {display: none;}
-    .pc_btn_top .pc_top {display: none;}
-
-    /* 모바일 탑버튼 */
-    .m_btn_top {position: fixed; right: 10px; bottom: 20px; width: 62px;}
-    .m_btn_top .m_top {
+    /* 탑버튼 */
+    .move_btn_top {right: 10px; bottom: 20px;}
+    .move_btn_top .top {
         width: 43px;
         height: 43px;
-        background: #ffe678 url(../images/top_arrow.png) no-repeat 50% 50%;
-        text-indent: -9999px;
-        border-radius: 50%;
-        transition: transform 0.5s;
         display: block;
     }
-    .m_btn_top:hover .m_top {
-        transform: translatey(-10px);
-    }
+
 
     /* 모바일 gnb 메뉴 */
     #header .m_gnb_wrap {

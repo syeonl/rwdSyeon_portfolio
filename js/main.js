@@ -124,14 +124,15 @@
         var winH = $(this).height();
     }).trigger('resize');
 
-    // 서브페이지 데스크탑 탑버튼
+    // 탑버튼
     $(window).scroll(function() {
+        // 스크롤바의 위치
         sc = $(this).scrollTop();
 
         if(sc >= 600) {
-            $('.pc_btn_top .pc_top').fadeIn();
+            $('.move_btn_top .top').fadeIn();
         } else {
-            $('.pc_btn_top .pc_top').fadeOut();
+            $('.move_btn_top .top').fadeOut();
         }
     }).trigger('scroll');
 
@@ -148,17 +149,5 @@
         $(this).addClass('active');
         $(this).siblings().removeClass('active');
     });
-
-    $(window).scroll(function() {
-        // 스크롤바의 위치
-        sc = $(this).scrollTop();
-
-        if(sc >= 600) {
-            $('.m_btn_top .m_top').fadeIn();
-        } else {
-            $('.m_btn_top .m_top').fadeOut();
-        }
-    }).trigger('scroll');
-
 
 })();
