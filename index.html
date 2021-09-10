@@ -15,7 +15,7 @@
     <link id="favicon" rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/ico_touch.png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -133,41 +133,41 @@
             <section id="skill" class="main_skill main_section02">
                 <div class="skill_inner">
                     <h2 class="main_tit">MY SKILL</h2>
-                    <ul class="skill">
+                    <div class="skill_tit">
+                        <h3>
+                            <em class="txt_white">#디자인 #퍼블리싱 #협업</em><br>
+                            열심히 기본기를 다졌어요
+                            <img src="images/hands.png" class="bounce" alt="손">
+                        </h3>
+                    </div>
+                    <ul class="wow slideInRight skill">
                         <li>
-                            <img src="images/html5.png" alt="html">
                             <div class="txt">
-                                <span>HTML5</span>
-                                <p>크로스 브라우징 이슈에 대해<br>
-                                    다양한 해결방법을 공부하고 있고
-                                    시멘틱한 구조와<br> 웹표준 및 웹접근성에
-                                    준수하는 마크업을 합니다.</p>
+                                <span><i class="icon xi-check"></i>HTML5</span>
+                                <p>크로스 브라우징 이슈에 대해 다양한 해결방법을 공부하고 있습니다.<br>
+                                    시멘틱한 구조와 웹표준 및 웹접근성에 준수하는 마크업을 합니다.</p>
                             </div>
                         </li>
                         <li>
-                            <img src="images/css3.png" alt="css">
                             <div class="txt">
-                                <span>CSS3</span>
-                            <p>CSS3 속성을 이해하며 디자인 시안에 따른<br> 디자인, 애니메이션을 구현할 수 있고<br>
-                                미디어쿼리를 사용하여 반응형 웹을 제작할 수 있습니다.
-                            </p>
+                                <span><i class="icon xi-check"></i>CSS3</span>
+                                <p>디자인 시안에 따른 디자인, 애니메이션을 구현할 수 있습니다.<br>
+                                    미디어쿼리를 사용하여 반응형 웹을 제작할 수 있습니다.
+                                </p>
                             </div>
                         </li>
                         <li>
-                            <img src="images/j.png" alt="javascript, jQuery">
                             <div class="txt">
-                                <span>JavaScript, jQuery</span>
-                            <p>이벤트 메소드를 사용해 기능을 구현하고<br>
-                                다양한 플러그인을 활용하여 애니메이션을<br> 제작할 수 있습니다.</p>
-                                </div>
+                                <span><i class="icon xi-check"></i>JavaScript, jQuery</span>
+                                <p>이벤트 메소드를 사용해 기능을 구현 할 수 있습니다.<br>
+                                다양한 플러그인을 활용하여 애니메이션을 제작할 수 있습니다.</p>
+                            </div>
                         </li>
                         <li>
-                            <img src="images/d.png" alt="ps, ai">
                             <div class="txt">
-                                <span>Ps, Ai</span>
-                            <p>웹 사이트의 프로토타입과 시안을 사용자의 관점에서<br> 생각하면서
-                                포토샵을 이용해 다양한 디자인을 구현하며<br>
-                                배너, 로고, 시안을 제작할 수 있습니다.</p>
+                                <span><i class="icon xi-check"></i>Photoshop, Illustrator</span>
+                                <p>웹 사이트의 프로토타입과 시안을 사용자의 관점에서 생각합니다.<br>
+                                다양한 디자인을 구현하며 배너, 로고, 시안을 제작할 수 있습니다.</p>
                             </div>
                         </li>
                     </ul>
@@ -176,6 +176,7 @@
             <section id="portfolio" class="main_portfolio main_section03">
                 <div class="portfolio_inner">
                     <h2 class="main_tit">PORTFOLIO</h2>
+                    <p class="main_txt">개인 포트폴리오<br><span>혼자 부딪혀 가며 열심히 만들었어요!</span></p>
                     <ul class="portfolio">
                         <li class="wow fadeInUp">
                             <img src="images/pc_kyowon.png" alt="교원에듀 데스크탑 리뉴얼 웹사이트">
@@ -229,15 +230,19 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="etc_portfolio">
+                        <p class="main_txt">기술 정리 포트폴리오<br><span>이만큼 해봤어요!</span></p>
+                        <a href="https://mysterious-care-0ec.notion.site/42b6806f57114dba9d12d41d24c3be11" target="_blank">클릭</a>
+                    </div>
                 </div>
             </section>
             <section id="contact" class="main_contact main_section04">
-                <div class="contact_inner">
+                <div class="wow fadeInUp contact_inner">
                     <h2 class="main_tit">CONTACT</h2>
                     <p class="txt">부족한 저의 포트폴리오를 봐주셔서 감사합니다.<br>
                     제자리 걸음만 하는 사람이 아닌 적극적인 사람,<br>
                     맡은일에 열심히 하고 성장하는 이승연이 되겠습니다.</p>
-                    <a class="resume" href="pdf/입사지원서_이승연.pdf" target="_blank">Resume Download<br>이력서/자기소개서</a>
+                    <a class="resume" href="https://mysterious-care-0ec.notion.site/2bbd96873d2347f4babb9dbc25b15acf" target="_blank">Resume Download<br>이력서/자기소개서</a>
                     <div class="contact_wrap">
                         <span class="email">yeon.kori@gmail.com</span>
                         <a class="qr" href="https://open.kakao.com/o/sJQPI8qd">

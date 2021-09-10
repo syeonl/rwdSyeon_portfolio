@@ -98,6 +98,11 @@ legend,caption,.blind {position: absolute; overflow: hidden; clip: rect(0 0 0 0)
 #skipNavi a { position: absolute; left: 0; top: -9999px; width: 100%; height: 40px; background: #000; color: #fff; text-align: center; font-size: 18px; line-height: 40px; z-index: 99999; }
 #skipNavi a:focus, #skipNavi a:active, #skipNavi a:hover {top:0;}
 
+/* 폰트 색상 공통 */
+.txt_white {color: #fff;}
+
+/* XE아이콘 공통 */
+.icon {font-size: 16px; font-weight: 700; margin-right: 10px;}
 
 /* ios사파리는 상단에 있을경우만 스크롤이 막히므로
 메뉴버튼클릭시 body를 위로 올려줌 */
@@ -108,7 +113,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 /***********************  메인공통 *********************** /
 /* 메인제목 공통 */
 .main_tit {font-size: 40px; position: relative; font-family: 'Montserrat', sans-serif; margin-bottom: 80px;}
-
+.main_txt {font-size: 20px; font-weight: 500;}
 
 /* 컨테이너 섹션 공통 */
 [class*= "main_section"] h2 {
@@ -185,7 +190,6 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     }
     #header .pc_lnb_wrap .lnb li>a:hover:after {transform: scale(1.5);}
 
-    .main_skill .skill_inner .skill>li .txt p br {display: none;}
     .main_portfolio .portfolio>li:after {display: block;}
     .main_portfolio .portfolio>li:nth-child(3):before {display: block;}
 
@@ -299,21 +303,41 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 .main_about .about_wrap .about_list .list>li>p {white-space: pre-line;}
 
 .main_skill {background: #c7dbff; padding: 60px 0 120px;}  
-.main_skill .skill_inner {width: 1200px; margin: 0 auto; text-align: center;} 
-.main_skill .skill_inner .skill {display: flex;}
-.main_skill .skill_inner .skill>li {flex: 0 1 calc(100% / 4);}
-.main_skill .skill_inner .skill>li+li {margin-left: 40px;}
-.main_skill .skill_inner .skill>li img {
-    height: 120px;
-    border: 4px solid #fff;
-    border-radius: 50%;
+.main_skill .skill_inner {width: 1100px; margin: 0 auto;} 
+.main_skill .skill_inner .main_tit {text-align: center;}
+.main_skill .skill_inner .skill_tit {float: left;     margin: 20px 100px 0 0;} 
+.main_skill .skill_inner .skill_tit h3 {font-size: 34px; font-weight: 700;} 
+.main_skill .skill_inner .skill_tit .bounce {height: 40px; animation: motion 1.3s linear 0s infinite; margin-top: 0;}
+@keyframes motion {
+	0% {margin-top: 0px;}
+	20% {margin-top: 10px;}
+	40% {margin-top: 0px;}
+	60% {margin-top: 10px;}
+	80% {margin-top: 0px;}
+	100% {margin-top: 0px;}
 }
+
+.main_skill .skill_inner .skill {display: flex; flex-direction: column;}
+.main_skill .skill_inner .skill>li+li {margin-top: 40px;}
+
 .main_skill .skill_inner .skill>li .txt {margin-top: 20px;}
-.main_skill .skill_inner .skill>li .txt span {font-size: 24px; font-style: italic; font-family: 'Montserrat',sans-serif; font-weight: 700;}
-.main_skill .skill_inner .skill>li .txt p {font-size: 18px; margin-top: 10px;}
+.main_skill .skill_inner .skill>li .txt span {font-size: 19px; font-family: 'Montserrat',sans-serif; font-weight: 700;}
+.main_skill .skill_inner .skill>li .txt p {font-size: 18px; margin-top: 10px; margin-left: 26px;}
 
 .main_portfolio {padding: 60px 0 120px;}
 .main_portfolio .portfolio_inner {width: 1200px; margin: 0 auto; text-align: center;}
+.main_portfolio .portfolio_inner .main_tit {margin-bottom: 0;}
+.main_portfolio .portfolio_inner .main_tit:after {
+    content: '';
+    width: 200px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    margin-left: -100px;
+    background: #c7dbff;
+}
+.main_portfolio .portfolio_inner .main_txt span {font-size: 16px; margin-bottom: 80px;}
 .main_portfolio .portfolio>li {position: relative;}
 .main_portfolio .portfolio>li:nth-child(2) img {width: 50%;}
 .main_portfolio .portfolio>li:nth-child(3) {margin-top: 90px; position: relative;}
@@ -365,31 +389,33 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 .main_portfolio .portfolio .btn_wrap li {float: left;}
 .main_portfolio .portfolio .btn_wrap li+li {margin-left: 20px;}
 .main_portfolio .portfolio .btn_wrap li a {
-    border: 1px solid #c7dbff;
-    border-radius: 30px;
     display: inline-block;
-    padding: 12px 20px 12px 20px;
-    color: #555;
+    padding: 12px 20px;
     font-family: 'Montserrat',sans-serif;
+    border-radius: 4px;
+    border: 1px solid #c7dbff;
     position: relative;
     overflow: hidden;
-    transition: color 0.2s;
+    transition: all 0.4s;
 }
-.main_portfolio .portfolio .btn_wrap li a:before{
+.main_portfolio .portfolio .btn_wrap li a:after{
     content: "";
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
-    background: #c7dbff;
-    border-radius: 30px;
     transform: translateX(-100%);
-    transition: transform 0.2s;
+    transition: transform 0.4s;
+    background: #c7dbff;
 }
-.main_portfolio .portfolio .btn_wrap li a:hover:before {transform: translateX(0);}
-.main_portfolio .portfolio .btn_wrap li a:hover {color: #fff; font-weight: 700;}
-.main_portfolio .portfolio .btn_wrap li a span {position: relative;}
+.main_portfolio .portfolio .btn_wrap li a:hover {color: #fff; background-color: #c7dbff;}
+.main_portfolio .portfolio .btn_wrap li a:hover:after {transform: translateX(0); width: 100%;}
+.main_portfolio .portfolio .btn_wrap li a span {position: relative; z-index: 1;}
+
+/* 기술 정리 포트폴리오 */
+.main_portfolio .etc_portfolio {border-top: 1px solid #8aa9e2; margin-top: 100px;}
+.main_portfolio .etc_portfolio .main_txt {margin-top: 80px;}
 
 
 
@@ -584,7 +610,6 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .main_skill .skill_inner .skill>li {flex: 1 1 40%;}
     .main_skill .skill_inner .skill>li:nth-child(2) {margin: 0;}
     .main_skill .skill_inner .skill>li+li {margin-left: 0; margin-top: 40px;}
-    .main_skill .skill_inner .skill>li .txt p br {display: block;}
 
     .main_portfolio .portfolio_inner {width: auto; margin: 0 20px;}
     .main_portfolio .portfolio>li:after {display: none;}
@@ -715,7 +740,6 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .main_skill .skill_inner .skill>li:nth-child(2) {margin-top: 40px;}
     .main_skill .skill_inner .skill>li .txt span {font-size: 18px;}
     .main_skill .skill_inner .skill>li .txt p {font-size: 16px;}
-    .main_skill .skill_inner .skill>li .txt p br {display: none;}
 
     .main_portfolio .portfolio>li h3 {font-size: 20px; font-weight: 500;}
     .main_portfolio .portfolio>li:after {margin-top: -206px; width: 316px; height: 180px;}
