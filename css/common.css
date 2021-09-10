@@ -113,7 +113,7 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 /***********************  메인공통 *********************** /
 /* 메인제목 공통 */
 .main_tit {font-size: 40px; position: relative; font-family: 'Montserrat', sans-serif; margin-bottom: 80px;}
-.main_txt {font-size: 20px; font-weight: 500;}
+.main_txt {font-size: 22px; font-weight: 500;}
 
 /* 컨테이너 섹션 공통 */
 [class*= "main_section"] h2 {
@@ -412,9 +412,24 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 .main_portfolio .portfolio .btn_wrap li a span {position: relative; z-index: 1;}
 
 /* 기술 정리 포트폴리오 */
-.main_portfolio .etc_portfolio {border-top: 1px solid #8aa9e2; margin-top: 100px;}
-.main_portfolio .etc_portfolio .main_txt {margin-top: 80px;}
+.main_portfolio .etc_portfolio {padding: 200px 0; position: relative;}
+.main_portfolio .etc_portfolio .box {
+    width: 600px;
+    height: 375px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -160px;
+    margin-left: -298px;
+    border: 2px solid #c7dbff;
+    background: #fff;
+    box-shadow: 16px 16px 3px #c7dbff;
+}
 
+.main_portfolio .etc_portfolio .main_txt {margin-top: 80px; position: relative;}
+.main_portfolio .etc_portfolio .btn_portfolio {position: relative; z-index: 1; margin-top: 40px;}
+.main_portfolio .etc_portfolio a {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: #292929;}
+.main_portfolio .etc_portfolio img {height: 40px; animation: motion 1.3s linear 0s infinite; margin-top: 0; position: relative;}
 
 
 .main_contact {padding: 120px 0; background: url(../images/contact.jpg) no-repeat 50% 50%; background-size: cover;}
@@ -742,6 +757,8 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
     .main_portfolio .portfolio .btn_wrap li a {padding: 10px; border: 2px solid #c7dbff;}
     .main_portfolio .portfolio>li:after {display: none;}
     .main_portfolio .portfolio>li:nth-child(3):before {display: none;}
+
+    .main_portfolio .etc_portfolio .box {width: 380px; height: 280px; margin-top: -100px; margin-left: -190px;}
     
     /* 모바일 메뉴 */
     #header .m_gnb_wrap {width: 34%; height: 34%;}
