@@ -355,6 +355,9 @@ body.hidden { position: fixed; left: 0; top: 0; width: 100%; overflow: hidden; }
 .main_portfolio .portfolio>li h3 {font-size: 32px;}
 
 .main_portfolio .portfolio>li:hover:after {transition: 10s; background-position: 0 bottom;}
+.main_portfolio .portfolio>.after_non {padding: 50px 0 10px 0;}
+.main_portfolio .portfolio>.after_non img {height: 100px;object-fit: contain;}
+.main_portfolio .portfolio>.after_non:after {display: none;}
 .main_portfolio .portfolio>li:after {
     content: "";
     left: 50%;
